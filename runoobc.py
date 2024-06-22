@@ -171,7 +171,7 @@ def download_and_replace_recursion(url, output_dir, base_url):
     if output_dir not in downloaded_files:
         with open(output_path, 'w', encoding='utf-8') as f:
             f.write(str(soup))
-            downloaded_files[output_dir] = True
+            downloaded_files[output_path] = True
         print("当前页面写入成功")
     else:
         print("当前页面已存在无需写入")
